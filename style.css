@@ -144,6 +144,14 @@ select {
   text-align: center;
 }
 
+.welcome {
+  text-align: center;
+  border: 5px solid black;
+  padding: 40px;
+  width: 80%;
+  margin: 20px auto;
+}
+
 @keyframes playTrack {
   from {
     transform: scale(1);
