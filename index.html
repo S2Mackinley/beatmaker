@@ -9,6 +9,11 @@
 </head>
 
 <body>
+  <div class="prom">
+    <h1>Prom Beats</h1>
+  </div>
+
+
   <div class="sequencer">
     <div class="kick-track">
       <div class="controls">
@@ -120,6 +125,57 @@
         <div class="pad hihat-pad b7"></div>
       </div>
     </div>
+    <div class="clap-track">
+      <div class="controls">
+        <h1>Clap</h1>
+        <button data-track="2" class="mute clap-volume">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+        <select name="clap-select" id="clap-select">
+          <option value="./sounds/clap-808.wav">Clap 808</option>
+          <option value="./sounds/clap-crushed.wav">Clap Crushed</option>
+          <option value="./sounds/clap-fat.wav">Clap Fat</option>
+          <option value="./sounds/clap-slapper.wav">Clap Slapper</option>
+          <option value="./sounds/clap-tape.wav">Clap tape</option>
+          <option value="./sounds/clap-analog.wav">Clap Analog</option>
+        </select>
+      </div>
+      <div class="clap">
+        <div class="pad clap-pad b0"></div>
+        <div class="pad clap-pad b1"></div>
+        <div class="pad clap-pad b2"></div>
+        <div class="pad clap-pad b3"></div>
+        <div class="pad clap-pad b4"></div>
+        <div class="pad clap-pad b5"></div>
+        <div class="pad clap-pad b6"></div>
+        <div class="pad clap-pad b7"></div>
+      </div>
+    </div>
+    <div class="cowbell-track">
+      <div class="controls">
+        <h1>Cowbell</h1>
+        <button data-track="2" class="mute cowbell-volume">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+        <select name="cowbell-select" id="cowbell-select">
+          <option value="./sounds/cowbell-808.wav">Cowbell 808</option>
+          <option value="./sounds/Cowbell-1.wav">Cowbell 1</option>
+          <option value="./sounds/Cowbell-2.wav">Cowbell 2</option>
+          <option value="./sounds/Cowbell-3.wav">Cowbell 3</option>
+          <option value="./sounds/Cowbell-4.wav">Cowbell 4</option>
+        </select>
+      </div>
+      <div class="cowbell">
+        <div class="pad cowbell-pad b0"></div>
+        <div class="pad cowbell-pad b1"></div>
+        <div class="pad cowbell-pad b2"></div>
+        <div class="pad cowbell-pad b3"></div>
+        <div class="pad cowbell-pad b4"></div>
+        <div class="pad cowbell-pad b5"></div>
+        <div class="pad cowbell-pad b6"></div>
+        <div class="pad cowbell-pad b7"></div>
+      </div>
+    </div>
     <button class="play">Play</button>
     <div class="tempo">
       <input type="range" class="tempo-slider" max="300" min="20" value="150" />
@@ -130,6 +186,8 @@
   <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
   <audio class="snare-sound" src="./sounds/snare-acoustic01.wav"></audio>
   <audio class="hihat-sound" src="./sounds/hihat-acoustic01.wav"></audio>
+  <audio class="clap-sound" src="./sounds/clap-808.wav"></audio>
+  <audio class="cowbell-sound" src="./sounds/cowbell-808.wav"></audio>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
     integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>

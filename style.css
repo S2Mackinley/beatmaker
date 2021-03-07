@@ -12,9 +12,16 @@ svg {
   pointer-events: none;
 }
 
+.prom h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .kick-pad,
 .snare-pad,
-.hihat-pad {
+.hihat-pad,
+.clap-pad,
+.cowbell-pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
@@ -29,6 +36,12 @@ svg {
 .hihat-pad {
   background: rgb(160, 224, 223);
 }
+.clap-pad {
+  background: gray;
+}
+.cowbell-pad {
+  background: pink;
+}
 .kick-pad.active {
   background: rgb(26, 142, 36);
 }
@@ -37,6 +50,12 @@ svg {
 }
 .hihat-pad.active {
   background: rgb(37, 42, 181);
+}
+.clap-pad.active {
+  background: black;
+}
+.cowbell-pad.active {
+  background: rgb(244, 63, 93);
 }
 
 .sequencer {
@@ -49,7 +68,9 @@ svg {
 
 .hihat-track,
 .snare-track,
-.kick-track {
+.kick-track,
+.clap-track,
+.cowbell-track {
   display: flex;
   align-items: center;
   width: 70%;
@@ -58,7 +79,9 @@ svg {
 }
 .kick,
 .snare,
-.hihat {
+.hihat,
+.clap,
+.cowbell {
   display: flex;
 }
 .controls {

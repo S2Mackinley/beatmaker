@@ -5,9 +5,13 @@ class DrumKit {
     this.currentKick = "./sounds/kick-classic.wav";
     this.currentSnare = "./sounds/snare-acoustic01.wav";
     this.currentHihat = "./sounds/hihat.acoustic01.wav";
+    this.currentClap = "./sounds/clap-808.wav";
+    this.currentCowbell = "./sounds/cowbell-808.wav";
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
+    this.clapAudio = document.querySelector(".clap-sound");
+    this.cowbellAudio = document.querySelector(".cowbell-sound");
     this.index = 0;
     this.bpm = 150;
     this.isPlaying = null;
@@ -36,6 +40,14 @@ class DrumKit {
         if (bar.classList.contains("hihat-pad")) {
           this.hihatAudio.currentTime = 0;
           this.hihatAudio.play();
+        }
+        if (bar.classList.contains("clap-pad")) {
+          this.clapAudio.currentTime = 0;
+          this.clapAudio.play();
+        }
+        if (bar.classList.contains("cowbell-pad")) {
+          this.cowbellAudio.currentTime = 0;
+          this.cowbellAudio.play();
         }
       }
     });
@@ -80,6 +92,12 @@ class DrumKit {
       case "hihat-select":
         this.hihatAudio.src = selectionValue;
         break;
+      case "clap-select":
+        this.clapAudio.src = selectionValue;
+        break;
+      case "cowbell-select":
+        this.cowbellAudio.src = selectionValue;
+        break;
     }
   }
   mute(e) {
@@ -96,6 +114,12 @@ class DrumKit {
         case "2":
           this.hihatAudio.volume = 0;
           break;
+        case "3":
+          this.hihatAudio.volume = 0;
+          break;
+        case "4":
+          this.cowbellAudio.volume = 0;
+          break;
       }
     } else {
       switch (muteIndex) {
@@ -107,6 +131,12 @@ class DrumKit {
           break;
         case "2":
           this.hihatAudio.volume = 1;
+          break;
+        case "3":
+          this.clapAudio.volume = 1;
+          break;
+        case "3":
+          this.cowbellAudio.volume = 1;
           break;
       }
     }
