@@ -6,6 +6,8 @@
 
 body {
   font-family: sans-serif;
+  background: black;
+  color: white;
 }
 i,
 svg {
